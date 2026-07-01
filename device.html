@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Device — Commuta</title>
+  <meta name="description" content="Hardware, sensors, PCB layout, enclosure and BLE connection for the Commuta portable air quality monitor." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand" aria-label="Commuta — home">
+        <span class="brand__dot" aria-hidden="true"></span>
+        Commuta
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="device.html" aria-current="page">Device</a>
+        <a href="app.html">App</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="section section--first">
+      <div class="container">
+        <div class="hero">
+          <div class="eyebrow hero__eyebrow">
+            The device · 01
+          </div>
+          <h1 class="hero__title">
+            A pocket-sized <em>instrument</em>.
+          </h1>
+          <p class="lead hero__lead">
+            The Commuta device is a purpose-built sensing unit with five
+            environmental sensors, a rechargeable battery, and a Bluetooth
+            link to the companion app. The hardware is designed to be worn
+            on a bag, run for a full commuting day, and record without
+            interruption.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- The build -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">01 / The build</span>
+          <h2>Inside the enclosure.</h2>
+          <p class="lead">
+            Two circuit boards, five sensors, a lithium-polymer battery,
+            and a 3D-printed enclosure sized for daily wear.
+          </p>
+        </header>
+
+        <div class="gallery gallery--3">
+          <figure>
+            <div class="media media--square">
+              <span class="media__label">Device photo<br />coming soon</span>
+            </div>
+            <figcaption class="text-muted mono" style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.5rem;">Fig. 01 · Assembled device</figcaption>
+          </figure>
+          <figure>
+            <div class="media media--square">
+              <span class="media__label">Enclosure photo<br />coming soon</span>
+            </div>
+            <figcaption class="text-muted mono" style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.5rem;">Fig. 02 · 3D-printed enclosure</figcaption>
+          </figure>
+          <figure>
+            <div class="media media--square">
+              <span class="media__label">Worn on bag<br />coming soon</span>
+            </div>
+            <figcaption class="text-muted mono" style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.5rem;">Fig. 03 · In use</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical specifications -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">02 / Technical specifications</span>
+          <h2>Sensors and hardware.</h2>
+        </header>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Component</th>
+              <th>Part</th>
+              <th>Function</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Microcontroller</td>
+              <td class="mono">Adafruit HUZZAH32 (ESP32)</td>
+              <td>Onboard Wi-Fi and BLE, integrated LiPo charging.</td>
+            </tr>
+            <tr>
+              <td>Particulate matter</td>
+              <td class="mono">Sensirion SPS30</td>
+              <td>PM1, PM2.5, PM4, PM10 mass concentrations.</td>
+            </tr>
+            <tr>
+              <td>CO₂ / temp / humidity</td>
+              <td class="mono">Sensirion SCD40</td>
+              <td>Carbon dioxide, ambient temperature and relative humidity.</td>
+            </tr>
+            <tr>
+              <td>VOC / NOx</td>
+              <td class="mono">Sensirion SGP41</td>
+              <td>Volatile organic compound and nitrogen oxide indices.</td>
+            </tr>
+            <tr>
+              <td>Barometric pressure</td>
+              <td class="mono">Infineon DPS368</td>
+              <td>Ambient pressure; altitude reference.</td>
+            </tr>
+            <tr>
+              <td>Battery</td>
+              <td class="mono">2000 mAh LiPo</td>
+              <td>Rechargeable via USB-C on the microcontroller.</td>
+            </tr>
+            <tr>
+              <td>Interface</td>
+              <td class="mono">Bi-colour LED, tactile button</td>
+              <td>Long-press power on / off; status indication.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PCB -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">03 / Circuit board</span>
+          <h2>Custom PCB, two chambers.</h2>
+          <p class="lead">
+            A dedicated printed circuit board separates heat-generating
+            electronics from the sensor array, protecting readings from
+            self-heating and outgassing.
+          </p>
+        </header>
+
+        <div class="gallery">
+          <figure>
+            <div class="media media--wide">
+              <span class="media__label">PCB render / photo<br />coming soon</span>
+            </div>
+            <figcaption class="text-muted mono" style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.5rem;">Fig. 04 · PCB top view</figcaption>
+          </figure>
+          <figure>
+            <div class="media media--wide">
+              <span class="media__label">Layout diagram<br />coming soon</span>
+            </div>
+            <figcaption class="text-muted mono" style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.5rem;">Fig. 05 · Two-chamber layout</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Data transmission -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">04 / Data transmission</span>
+          <h2>Streamed, buffered, resilient.</h2>
+        </header>
+
+        <div class="feature-list">
+          <div class="feature">
+            <span class="feature__num">01</span>
+            <h3 class="feature__title">Bluetooth Low Energy</h3>
+            <p class="feature__body">
+              A 40-byte sample packet is sent to the app every ten seconds
+              over BLE. Low power, no pairing, and works in the background
+              on the phone.
+            </p>
+          </div>
+          <div class="feature">
+            <span class="feature__num">02</span>
+            <h3 class="feature__title">On-device buffer</h3>
+            <p class="feature__body">
+              If the phone is out of range or the app is closed, the device
+              writes samples to flash storage in rotating segment files.
+              Roughly three days of buffered data.
+            </p>
+          </div>
+          <div class="feature">
+            <span class="feature__num">03</span>
+            <h3 class="feature__title">Sequence-safe sync</h3>
+            <p class="feature__body">
+              Each sample carries a sequence number, so the app can rebuild
+              a gapless timeline the moment it reconnects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        Commuta · MSc Connected Environments · CASA · UCL · 2026
+      </div>
+      <div class="footer__links">
+        <a href="about.html">About</a>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

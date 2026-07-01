@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Commuta — Portable air quality monitor for the London Underground</title>
+  <meta name="description" content="Commuta is a portable, wearable air quality monitor designed for personal exposure monitoring on the London Underground. A CASA dissertation project." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand" aria-label="Commuta — home">
+        <span class="brand__dot" aria-hidden="true"></span>
+        Commuta
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="device.html">Device</a>
+        <a href="app.html">App</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="section section--first">
+      <div class="container">
+        <div class="hero">
+          <div class="eyebrow hero__eyebrow">
+            A CASA dissertation project · UCL
+          </div>
+          <h1 class="hero__title">
+            What's really<br />in the air <em>down&nbsp;there?</em>
+          </h1>
+          <p class="lead hero__lead">
+            Commuta is a portable air quality monitor for London Underground
+            commuters. It clips onto a bag, measures the air around you as
+            you travel, and turns those readings into a picture of what
+            you're actually breathing on your daily commute.
+          </p>
+        </div>
+
+        <!-- Signature readout module -->
+        <div class="readout" role="figure" aria-label="Example sensor readout">
+          <div class="readout__header">
+            <span class="readout__title">Live readout · Bakerloo line, sample</span>
+            <span class="readout__status">Streaming</span>
+          </div>
+
+          <div class="readout__row">
+            <span class="readout__dot readout__dot--high" aria-hidden="true"></span>
+            <span class="readout__label">PM2.5</span>
+            <span class="readout__spec">Fine particulates</span>
+            <span class="readout__value">42</span>
+            <span class="readout__band">µg/m³ · high</span>
+          </div>
+
+          <div class="readout__row">
+            <span class="readout__dot readout__dot--high" aria-hidden="true"></span>
+            <span class="readout__label">PM10</span>
+            <span class="readout__spec">Coarse particulates</span>
+            <span class="readout__value">72</span>
+            <span class="readout__band">µg/m³ · high</span>
+          </div>
+
+          <div class="readout__row">
+            <span class="readout__dot readout__dot--mod" aria-hidden="true"></span>
+            <span class="readout__label">CO₂</span>
+            <span class="readout__spec">Carbon dioxide</span>
+            <span class="readout__value">1,240</span>
+            <span class="readout__band">ppm · mod</span>
+          </div>
+
+          <div class="readout__row">
+            <span class="readout__dot readout__dot--low" aria-hidden="true"></span>
+            <span class="readout__label">VOC</span>
+            <span class="readout__spec">Volatile organic cpds.</span>
+            <span class="readout__value">112</span>
+            <span class="readout__band">index · ok</span>
+          </div>
+
+          <div class="readout__row">
+            <span class="readout__dot readout__dot--low" aria-hidden="true"></span>
+            <span class="readout__label">NOx</span>
+            <span class="readout__spec">Nitrogen oxides</span>
+            <span class="readout__value">7</span>
+            <span class="readout__band">index · ok</span>
+          </div>
+
+          <div class="readout__foot">
+            Illustrative readings · DAQI bands (UK)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The problem -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">01 / The problem</span>
+          <h2>The air on the Underground is not the air above it.</h2>
+        </header>
+        <div class="split">
+          <div class="prose">
+            <p>
+              Deep-level Tube platforms are poorly ventilated. Brake dust,
+              wheel wear, and rail grinding release fine metallic
+              particulates that build up in the air, and commuters can be
+              exposed to levels many times higher than at street level for
+              significant stretches of every working day.
+            </p>
+            <p>
+              Fixed monitoring stations tell us about outdoor air, but they
+              don't follow you underground, through a platform, and onto a
+              carriage. Personal exposure &mdash; what a specific person
+              actually breathes across a specific journey &mdash; is much
+              harder to measure. Commuta is a way to measure it.
+            </p>
+          </div>
+          <aside class="stack-md">
+            <div class="spec">
+              <span class="spec__label">Deployment</span>
+              <span class="spec__value">Personal &amp; portable</span>
+              <span class="spec__note">Worn on a bag; battery-powered; discreet enough for daily commuting use.</span>
+            </div>
+            <div class="spec">
+              <span class="spec__label">Scale</span>
+              <span class="spec__value">One person, one journey</span>
+              <span class="spec__note">Measures what you breathe, where you are, minute by minute.</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- What it measures -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">02 / What it measures</span>
+          <h2>Five signals, one small device.</h2>
+          <p class="lead">
+            A single palm-sized unit reads the air across five channels and
+            two ambient conditions, sampling continuously as you move.
+          </p>
+        </header>
+
+        <div class="specs">
+          <div class="spec">
+            <span class="spec__label">PM2.5 / PM10</span>
+            <span class="spec__value">Particulate matter</span>
+            <span class="spec__note">Fine and coarse dust. The signature pollutant of Tube platforms.</span>
+          </div>
+          <div class="spec">
+            <span class="spec__label">CO₂</span>
+            <span class="spec__value">Carbon dioxide</span>
+            <span class="spec__note">A proxy for how well a space is ventilated.</span>
+          </div>
+          <div class="spec">
+            <span class="spec__label">VOC</span>
+            <span class="spec__value">Volatile organic compounds</span>
+            <span class="spec__note">Chemical emissions from materials, cleaning products, and people.</span>
+          </div>
+          <div class="spec">
+            <span class="spec__label">NOx</span>
+            <span class="spec__value">Nitrogen oxides</span>
+            <span class="spec__note">Traffic-related pollutants relevant to street-level portions of a commute.</span>
+          </div>
+          <div class="spec">
+            <span class="spec__label">Temperature</span>
+            <span class="spec__value">Ambient °C</span>
+            <span class="spec__note">Context for the platform environment.</span>
+          </div>
+          <div class="spec">
+            <span class="spec__label">Humidity &amp; pressure</span>
+            <span class="spec__value">RH · hPa</span>
+            <span class="spec__note">Compensation data for sensor accuracy and altitude reference.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">03 / How it works</span>
+          <h2>A device, a phone, a picture of your air.</h2>
+        </header>
+
+        <div class="feature-list">
+          <div class="feature">
+            <span class="feature__num">01</span>
+            <h3 class="feature__title">The device measures</h3>
+            <p class="feature__body">
+              A palm-sized unit with five air-quality sensors, a
+              rechargeable battery, and a small button interface. Clips to
+              your bag and starts reading as soon as you step out.
+            </p>
+          </div>
+          <div class="feature">
+            <span class="feature__num">02</span>
+            <h3 class="feature__title">It talks to your phone</h3>
+            <p class="feature__body">
+              Readings stream to the Commuta companion app over Bluetooth
+              Low Energy. If you're out of range, the device buffers
+              locally and syncs when you reconnect.
+            </p>
+          </div>
+          <div class="feature">
+            <span class="feature__num">03</span>
+            <h3 class="feature__title">You see your air</h3>
+            <p class="feature__body">
+              The app shows what you're breathing right now, what you
+              breathed on past journeys, and where along your commute the
+              air was worst.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Page links -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">04 / More</span>
+          <h2>Go deeper.</h2>
+        </header>
+
+        <div class="page-links">
+          <a href="device.html" class="page-link">
+            <span class="page-link__num">→ 01</span>
+            <span class="page-link__title">The device</span>
+            <span class="page-link__body">
+              Hardware, sensors, PCB, enclosure, and the Bluetooth link
+              back to the app.
+            </span>
+            <span class="page-link__arrow">Read more</span>
+          </a>
+          <a href="app.html" class="page-link">
+            <span class="page-link__num">→ 02</span>
+            <span class="page-link__title">The app</span>
+            <span class="page-link__body">
+              Live readings, historical data, and exposure maps of your
+              own journeys.
+            </span>
+            <span class="page-link__arrow">Read more</span>
+          </a>
+          <a href="about.html" class="page-link">
+            <span class="page-link__num">→ 03</span>
+            <span class="page-link__title">About</span>
+            <span class="page-link__body">
+              The dissertation, the aim of the project, and the source
+              code on GitHub.
+            </span>
+            <span class="page-link__arrow">Read more</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        Commuta · MSc Connected Environments · CASA · UCL · 2026
+      </div>
+      <div class="footer__links">
+        <a href="about.html">About</a>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The App — Commuta</title>
+  <meta name="description" content="The Commuta companion app shows live and historical air quality readings from your journeys and maps your personal exposure across the city." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand" aria-label="Commuta — home">
+        <span class="brand__dot" aria-hidden="true"></span>
+        Commuta
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="device.html">Device</a>
+        <a href="app.html" aria-current="page">App</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="section section--first">
+      <div class="container">
+        <div class="hero">
+          <div class="eyebrow hero__eyebrow">
+            The app · 02
+          </div>
+          <h1 class="hero__title">
+            Your air, <em>read back to you</em>.
+          </h1>
+          <p class="lead hero__lead">
+            The Commuta companion app pairs with the device over Bluetooth
+            and turns raw sensor readings into a picture of your daily
+            exposure &mdash; live, historical, and mapped onto the
+            journeys you actually took.
+          </p>
+        </div>
+
+        <div class="callout">
+          <span class="callout__eyebrow">Status</span>
+          <p style="margin:0;">
+            The Commuta app is in active development for the dissertation
+            submission. The screenshots below describe the intended
+            experience; features will land progressively before the final
+            submission in August 2026.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 1: Live -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">01 / Live</span>
+          <h2>What you're breathing, right now.</h2>
+          <p class="lead">
+            A live dashboard streams readings from the device in real
+            time. DAQI-banded values make it obvious at a glance whether
+            the air around you is clean, moderate, or something to worry
+            about.
+          </p>
+        </header>
+
+        <div class="split">
+          <figure>
+            <div class="media media--tall" style="max-width: 320px;">
+              <span class="media__label">Live screen<br />coming soon</span>
+            </div>
+            <figcaption class="text-muted mono" style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.5rem;">Fig. 01 · Live readings</figcaption>
+          </figure>
+          <div class="prose">
+            <p>
+              Each sensor gets its own reading card, colour-coded to the
+              UK Daily Air Quality Index. Values update every ten seconds
+              as new samples arrive from the device.
+            </p>
+            <p>
+              A summary band at the top gives an overall quality reading
+              for the current moment, so you can tell whether it's a
+              good time to be exactly where you are.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 2: History -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">02 / History</span>
+          <h2>What you breathed yesterday.</h2>
+          <p class="lead">
+            Every sample is stored, so you can look back at any past
+            journey and see how your exposure changed minute by minute.
+          </p>
+        </header>
+
+        <div class="split">
+          <div class="prose">
+            <p>
+              History views chart each sensor over time. Zoom in on a
+              single journey to see where the spikes happened, or zoom out
+              to see how a whole week of commuting compares.
+            </p>
+            <p>
+              Weekly and monthly summaries turn raw sample data into
+              patterns you can act on.
+            </p>
+          </div>
+          <figure>
+            <div class="media media--tall" style="max-width: 320px;">
+              <span class="media__label">History screen<br />coming soon</span>
+            </div>
+            <figcaption class="text-muted mono" style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.5rem;">Fig. 02 · Historical charts</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature 3: Map -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">03 / Map</span>
+          <h2>Where the air was worst.</h2>
+          <p class="lead">
+            Readings are pinned to the GPS trace of your journey and
+            matched to Underground stations along the way. Your commute
+            becomes a route through air quality, not just through the
+            city.
+          </p>
+        </header>
+
+        <figure>
+          <div class="media media--wide">
+            <span class="media__label">Exposure map<br />coming soon</span>
+          </div>
+          <figcaption class="text-muted mono" style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;margin-top:0.5rem;">Fig. 03 · Exposure mapped onto a journey</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Feature 4: Understanding -->
+    <section class="section">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-head__num">04 / Understanding</span>
+          <h2>Plain-language explanations.</h2>
+        </header>
+
+        <div class="feature-list">
+          <div class="feature">
+            <span class="feature__num">01</span>
+            <h3 class="feature__title">What each pollutant means</h3>
+            <p class="feature__body">
+              Every sensor reading links to a short explanation of what
+              the pollutant is, where it comes from, and what
+              concentrations to pay attention to.
+            </p>
+          </div>
+          <div class="feature">
+            <span class="feature__num">02</span>
+            <h3 class="feature__title">DAQI bands, not just numbers</h3>
+            <p class="feature__body">
+              Values are grouped into the UK Daily Air Quality Index bands
+              so you can read the air without having to memorise
+              µg/m³ thresholds.
+            </p>
+          </div>
+          <div class="feature">
+            <span class="feature__num">03</span>
+            <h3 class="feature__title">Route insight</h3>
+            <p class="feature__body">
+              Over time, you build a personal picture of which lines and
+              stations expose you most, and whether an alternative would
+              be measurably cleaner.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        Commuta · MSc Connected Environments · CASA · UCL · 2026
+      </div>
+      <div class="footer__links">
+        <a href="about.html">About</a>
+        <a href="#top">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
